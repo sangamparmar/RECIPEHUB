@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #252020; /* Dark background color */
+  color: #fff; /* White text color */
+}
+
+.navbar {
+  background-color: #020202; /* Dark navbar background */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* White navbar brand text */
+}
+
+.welcome-section {
+  background-color: #d9534f; /* Reddish welcome section background */
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.recipe-card {
+  border: 1px solid #333; /* Darker border color */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1); /* White shadow for hover effect */
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff; /* White card title */
+}
+
+.card-text {
+  color: #2c2929; /* Lighter text color */
+}
+
+.btn-primary {
+  background-color: #d9534f; /* Reddish button color */
+  border-color: #d9534f;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c9302c; /* Darker hover color */
+  border-color: #c9302c;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#login {
+  background-color: #ab7f0f; /* Dark yellow login button */
+  color: #333; /* Dark text color */
+}
+
+#login:hover {
+  background-color: #a2c214; /* Darker hover color */
+}
+
+.quote-area {
+  position: relative;
+  z-index: 1;
+  border: 10px solid #40ba37;
+  padding: 40px 25px;
+  margin-bottom: 80px; }
+  .quote-area span {
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 30px;
+    display: block;
+    color: #40ba37;
+    line-height: 1; }
+  .quote-area h4 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #474747; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .quote-area h4 {
+        font-size: 20px; } }
+  .quote-area p {
+    color: #474747;
+    font-size: 16px;
+    margin-bottom: 50px; }
+  .quote-area .date-comments .date {
+    font-size: 12px;
+    color: #40ba37; }
+  .quote-area .date-comments .comments {
+    font-size: 12px;
+    color: #9b9b9b; }
+
+/* :: 12.0 Newsletter Area */
+.newsletter-area {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px; }
+  .newsletter-area h4 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    display: block;
+    color: #5a2929; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .newsletter-area h4 {
+        font-size: 20px; } }
+
+.newsletter-form {
+  padding: 30px 15px 100px; }
+  .newsletter-form form input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #efe2e2;
+    color: #9b9b9b;
+    font-size: 12px;
+    font-style: italic;
+    border-left: 3px solid #1c8314;
+    padding: 0 20px;
+    margin-bottom: 25px; }
+  .newsletter-form p {
+    margin-top: 30px;
+    color: #1b1919;
+    font-size: 12px;
+    margin-bottom: 0;
+    font-style: italic;
+    background-color: #120505;
+  
+  }
+
+/* :: 13.0 Delicious Adds */
+.delicious-add {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px; }
+  .delicious-add img {
+    width: 100%; }
+#holala{
+  background-color: #e67300;
+}
+
+#holala:hover{
+  background-color: #e2b32b;
+  color: whitesmoke;
+}

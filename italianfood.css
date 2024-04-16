@@ -1,0 +1,238 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+.navbar {
+  background-color: #000; /* Use hex code for black */
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.welcome-section {
+  background-color: #c9ab18;
+  color: #262323;body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .navbar {
+    background-color: #000;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .welcome-section {
+    background-color: #c9ab18;
+    color: #262323;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-text {
+    color: #666;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio for video */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #hola {
+    font-size: large;
+  }
+  
+  #login {
+    background-color: rgb(171, 127, 15);
+    color: black;
+  }
+  
+  #login:hover {
+    background-color: rgb(162, 194, 20);
+  }
+  
+  padding: 80px 0;
+  text-align: center;
+}
+.recipe-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+}
+.card-text {
+  color: #666;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio for video */
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+#hola{
+  font-size: large;
+}
+#login{
+  background-color: rgb(171, 127, 15);
+  color: black;
+}
+#login:hover{
+  background-color: rgb(162, 194, 20);
+}
+
+
+.quote-area {
+  position: relative;
+  z-index: 1;
+  border: 10px solid #40ba37;
+  padding: 40px 25px;
+  margin-bottom: 80px; }
+  .quote-area span {
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 30px;
+    display: block;
+    color: #40ba37;
+    line-height: 1; }
+  .quote-area h4 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #474747; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .quote-area h4 {
+        font-size: 20px; } }
+  .quote-area p {
+    color: #474747;
+    font-size: 16px;
+    margin-bottom: 50px; }
+  .quote-area .date-comments .date {
+    font-size: 12px;
+    color: #40ba37; }
+  .quote-area .date-comments .comments {
+    font-size: 12px;
+    color: #9b9b9b; }
+
+/* :: 12.0 Newsletter Area */
+.newsletter-area {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px; }
+  .newsletter-area h4 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    display: block;
+    color: #5a2929; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .newsletter-area h4 {
+        font-size: 20px; } }
+
+.newsletter-form {
+  padding: 30px 15px 100px; }
+  .newsletter-form form input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #ffffff;
+    color: #9b9b9b;
+    font-size: 12px;
+    font-style: italic;
+    border-left: 3px solid #1c8314;
+    padding: 0 20px;
+    margin-bottom: 25px; }
+  .newsletter-form p {
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 0;
+    font-style: italic; }
+
+/* :: 13.0 Delicious Adds */
+.delicious-add {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px; }
+  .delicious-add img {
+    width: 100%; }
+#holala{
+  background-color: #e67300;
+}
+
+#holala:hover{
+  background-color: #e2b32b;
+  color: whitesmoke;
+}

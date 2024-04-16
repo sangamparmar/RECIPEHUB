@@ -1,0 +1,149 @@
+.recipe-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+
+  .recipe-card:hover {
+    transform: scale(1.05);
+  }
+
+  .card-img-top {
+    height: 200px; /* Adjust the height of the card image */
+    object-fit: cover; /* Ensure the image covers the entire space */
+  }
+
+  .card-body {
+    height: 200px; /* Adjust the height of the card body */
+  }
+
+  /* Custom CSS for welcome section */
+  .welcome-section {
+    background-color: #1062b5; /* Light gray background color */
+    padding: 80px 0; /* Padding top and bottom */
+    text-align: center;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right, #ff8372, #e2b32b); /* Gradient background */
+    color: rgba(36, 36, 36, 1);
+    --tw-text-opacity: 5; /* Text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        --tw-text-opacity: ;
+
+    /* Shadow effect */
+  }
+
+  .welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .welcome-section p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #hell{
+    background-color: #f0a500;
+    color: black;
+  }
+#hell:hover{
+  background-color: #e67300;
+  color: black;
+}
+
+
+.quote-area {
+  position: relative;
+  z-index: 1;
+  border: 10px solid #40ba37;
+  padding: 40px 25px;
+  margin-bottom: 80px; }
+  .quote-area span {
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 30px;
+    display: block;
+    color: #40ba37;
+    line-height: 1; }
+  .quote-area h4 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #474747; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .quote-area h4 {
+        font-size: 20px; } }
+  .quote-area p {
+    color: #474747;
+    font-size: 16px;
+    margin-bottom: 50px; }
+  .quote-area .date-comments .date {
+    font-size: 12px;
+    color: #40ba37; }
+  .quote-area .date-comments .comments {
+    font-size: 12px;
+    color: #9b9b9b; }
+
+/* :: 12.0 Newsletter Area */
+.newsletter-area {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px; }
+  .newsletter-area h4 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    display: block;
+    color: #5a2929; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .newsletter-area h4 {
+        font-size: 20px; } }
+
+.newsletter-form {
+  padding: 30px 15px 100px; }
+  .newsletter-form form input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #ffffff;
+    color: #9b9b9b;
+    font-size: 12px;
+    font-style: italic;
+    border-left: 3px solid #1c8314;
+    padding: 0 20px;
+    margin-bottom: 25px; }
+  .newsletter-form p {
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 0;
+    font-style: italic; }
+
+/* :: 13.0 Delicious Adds */
+.delicious-add {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px; }
+  .delicious-add img {
+    width: 100%; }
+#holala{
+  background-color: #e67300;
+}
+
+#holala:hover{
+  background-color: #e2b32b;
+  color: whitesmoke;
+}

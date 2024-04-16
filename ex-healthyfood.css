@@ -1,0 +1,61 @@
+.recipe-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+
+  .recipe-card:hover {
+    transform: scale(1.05);
+  }
+
+  .card-img-top {
+    height: 200px; /* Adjust the height of the card image */
+    object-fit: cover; /* Ensure the image covers the entire space */
+  }
+
+  .card-body {
+    height: 200px; /* Adjust the height of the card body */
+  }
+
+  /* Custom CSS for welcome section */
+  .welcome-section {
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 80px 0; /* Padding top and bottom */
+    text-align: center;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right, #f0a500, #e67300); /* Gradient background */
+    color: #fff; /* Text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+
+  .welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .welcome-section p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #hell{
+    background-color: #f0a500;
+    color: black;
+  }
+#hell:hover{
+  background-color: #e67300;
+  color: black;
+}

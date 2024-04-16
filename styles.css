@@ -1,0 +1,319 @@
+  .welcome-border {
+    
+    border-radius: 10px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  .recipe-categories {
+    background-image: url('bgimg.jpg'); /* Path to your background image */
+    background-size: cover;
+    
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+  }
+ #holal{
+  color: #eceef3;
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 90px;
+  }
+  
+  .category-buttons {
+    margin-top: 50px;
+  }
+  
+  .category-buttons .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .category {
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .category a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .category-image {
+    width: 300px; /* Adjust image size as needed */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .category-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+  }
+  /* Add hover effect to featured recipe cards */
+.featured-recipes .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-recipes .card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(209, 42, 53, 0.3);
+}
+/* Featured recipe section styling */
+.featured-recipes {
+  padding: 80px 0;
+}
+
+/* Section title styling */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #333; /* Adjust color as needed */
+}
+
+/* Card hover effect */
+.recipe-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(15, 15, 144, 0.3);
+}
+
+/* Card title styling */
+.recipe-card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Card text styling */
+.recipe-card .card-text {
+  color: #666; /* Adjust color as needed */
+}
+/* Styling Testimonials */
+.testimonials {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 50px 0;
+}
+
+.testimonial {
+  background-color: #fff; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 18px; /* Increase font size */
+  margin-bottom: 10px;
+}
+
+.testimonial footer {
+  font-size: 16px; /* Increase font size */
+  font-style: italic;
+}
+
+/* Animated Effects */
+.testimonial:hover {
+  transform: translateY(-5px); /* Move the card up slightly */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Optional: Iconography */
+.testimonial blockquote:before {
+  content: "\201C"; /* Left double quotation mark */
+  font-size: 40px;
+  color: #6c757d; /* Gray color */
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #e6e4e4;
+    font-size: 1000%;
+}
+
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Add additional styling as needed */
+/* .video-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+} */
+.video-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Adjust image size and add border radius */
+.category-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Add spacing between categories */
+.categories-section .category {
+  margin-bottom: 40px;
+}
+
+/* Style the section title */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* ----------------------------CARD TRANSITION ON Categories SECTION ----------------------- */
+
+.category-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+#login{
+  background-color: rgb(171, 127, 15);
+  color: black;
+}
+#login:hover{
+  background-color: rgb(162, 194, 20);
+}
+
+
+.quote-area {
+  position: relative;
+  z-index: 1;
+  border: 10px solid #40ba37;
+  padding: 40px 25px;
+  margin-bottom: 80px; }
+  .quote-area span {
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 30px;
+    display: block;
+    color: #40ba37;
+    line-height: 1; }
+  .quote-area h4 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #474747; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .quote-area h4 {
+        font-size: 20px; } }
+  .quote-area p {
+    color: #474747;
+    font-size: 16px;
+    margin-bottom: 50px; }
+  .quote-area .date-comments .date {
+    font-size: 12px;
+    color: #40ba37; }
+  .quote-area .date-comments .comments {
+    font-size: 12px;
+    color: #9b9b9b; }
+
+/* :: 12.0 Newsletter Area */
+.newsletter-area {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px; }
+  .newsletter-area h4 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    display: block;
+    color: #5a2929; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .newsletter-area h4 {
+        font-size: 20px; } }
+
+.newsletter-form {
+  padding: 30px 15px 100px; }
+  .newsletter-form form input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #ffffff;
+    color: #9b9b9b;
+    font-size: 12px;
+    font-style: italic;
+    border-left: 3px solid #1c8314;
+    padding: 0 20px;
+    margin-bottom: 25px; }
+  .newsletter-form p {
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    margin-bottom: 0;
+    font-style: italic; }
+
+/* :: 13.0 Delicious Adds */
+.delicious-add {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 80px; }
+  .delicious-add img {
+    width: 100%; }
+#holala{
+  background-color: #e67300;
+}
+
+#holala:hover{
+  background-color: #e2b32b;
+  color: whitesmoke;
+}

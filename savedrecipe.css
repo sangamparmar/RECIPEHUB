@@ -1,0 +1,61 @@
+/* saved-recipes.css */
+
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .saved-recipes-section {
+    padding: 50px 0;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666666;
+  }
+  
+  .navbar {
+    background-color: #343a40;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+  

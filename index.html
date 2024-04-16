@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Sharing Platform</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" ><img src="logo.png" alt="" height="50"> </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Featured-recipe">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item" id="login">
+            <a target="_blank" class="nav-link btn btn-outline-yellow" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <!-- Video Background -->
+<section class="hero-section">
+  <video autoplay muted loop id="hero-video" class="video-bg">
+    <source src="hello.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- Text Content Container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <div class="welcome-border">
+          <h1>Welcome to Recipe Sharing Platform</h1>
+          <p>Discover and share amazing recipes from around the world!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br><br>
+<section class="recipe-categories">
+  <div class="categories-bg">
+    <div class="container">
+      <h2 class="section-title" id="holal">Recipe Categories</h2>
+    </div>
+  </div>
+</section>
+
+<!-- Categories Section --><!-- Categories Section -->
+
+<section class="categories-section">
+  <div class="container">
+    <h2 class="text-center mb-4">Explore Our Categories</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4" onmouseover="scaleCategory(this)" onmouseout="resetCategory(this)">
+        <div class="card category-card">
+          <img src="healthy-2.jpg" class="card-img-top" alt="Healthy Food">
+          <div class="card-body">
+            <h5 class="card-title">Healthy Food for Fitness Enthusiasts</h5>
+            <p class="card-text">Discover nutritious and delicious recipes designed to fuel your active lifestyle.</p>
+            <a target="_blank" href="Healthyfood.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" onmouseover="scaleCategory(this)" onmouseout="resetCategory(this)">
+        <div class="card category-card">
+          <img src="chinese.jpg" class="card-img-top" alt="Chinese Food">
+          <div class="card-body">
+            <h5 class="card-title">Chinese Food</h5>
+            <p class="card-text">Experience the bold and savory flavors of authentic Chinese cuisine with our collection of recipes.</p>
+            <a target="_blank" href="chinesefoodd.html" class="btn btn-warning">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" onmouseover="scaleCategory(this)" onmouseout="resetCategory(this)">
+        <div class="card category-card">
+          <img src="italian.jpeg" class="card-img-top" alt="Premium Italian Food">
+          <div class="card-body">
+            <h5 class="card-title">Premium Italian Food</h5>
+            <p class="card-text">Indulge in the rich and comforting tastes of Italy with our premium selection of Italian recipes.</p>
+            <a target="_blank" href="italianfood.html" class="btn btn-danger">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- -------------------REAL ONE--------------------------------- -->
+<!-- <section class="categories-section">
+  <div class="container">
+    <h2 class="section-title">Explore Our Categories</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="category">
+          <a href="#" class="btn btn-primary ">Healthy Food for Fitness Enthusiasts</a>
+          <img src="healthy-2.jpg" alt="Healthy Food" class="category-image">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="category">
+          <a href="#" class="btn btn-warning ">Chinese Food</a>
+          <img src="chinese.jpg" alt="Chinese Food" class="category-image">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="category">
+          <a href="#" class="btn btn-danger ">Premium Italian Food</a>
+          <img src="italian.jpeg" alt="Premium Italian Food" class="category-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+  
+  <!-- <section class="hero-section">
+    <div class="container">
+      <div class="welcome-border">
+        <h1>Welcome to Recipe Sharing Platform</h1>
+        <p>Discover and share amazing recipes from around the world!</p>
+      </div>
+      <div class="category-buttons">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="category">
+              <a href="#" class="btn btn-primary">Healthy Food for Fitness Enthusiasts</a>
+              <img src="healthy-2.jpg" alt="Healthy Food" class="category-image">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category">
+              <a href="#" class="btn btn-warning">Chinese Food</a>
+              <img src="chinese.jpg" alt="Chinese Food" class="category-image">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="category">
+              <a href="#" class="btn btn-danger">Premium Italian Food</a>
+              <img src="italian.jpeg" alt="Premium Italian Food" class="category-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Featured Recipes Section -->
+  <!-- Featured Recipes Section -->
+
+  
+  <div class="slider">
+<section class="featured-recipes">
+  <div id="Featured-recipe" class="container">
+    <h2  class="section-title">Featured Recipes</h2>
+    <div class="row">
+      <!-- Featured Recipe 1 -->
+      <div class="col-md-4">
+        <div class="card recipe-card">
+          <img src="healthy-salad.jpg" class="card-img-top" alt="Featured Recipe 1">
+          <div class="card-body">
+            <h5 class="card-title">Healthy Salad</h5>
+            <p class="card-text">This vibrant and nutritious salad is packed with fresh, colorful vegetables, tossed with a zesty lemon vinaigrette, and topped with crunchy toasted almonds. It's the perfect dish for a light and refreshing meal.</p>
+            <a href="https://openstove.org/recipes/arugula-orange-mozzarella-salad" target="_blank" class="btn btn-primary">View Recipe</a>
+          </div>
+        </div>
+      </div>
+      <!-- Featured Recipe 2 -->
+      <div class="col-md-4">
+        <div class="card recipe-card">
+          <img src="chinese-noodle-1.jpg" class="card-img-top" alt="Featured Recipe 2">
+          <div class="card-body">
+            <h5 class="card-title">Spicy Noodles</h5>
+            <p class="card-text">These spicy noodles are a delicious blend of flavors and textures, featuring tender noodles tossed in a savory, spicy sauce with fresh vegetables and aromatic herbs. It's a satisfying and comforting dish with a kick of heat.</p>
+            <a href="https://openstove.org/recipes/khao-soi-kai" target="_blank" class="btn btn-primary">View Recipe</a>
+          </div>
+        </div>
+      </div>
+      <!-- Featured Recipe 3 -->
+      <div class="col-md-4">
+        <div class="card recipe-card">
+          <img src="italian-pizza.jpg" class="card-img-top" alt="Featured Recipe 3">
+          <div class="card-body">
+            <h5 class="card-title">Italian Pizza</h5>
+            <p class="card-text"> Indulge in the classic flavors of Italy with this mouthwatering pizza, featuring a crispy thin crust topped with tangy tomato sauce, gooey melted cheese, and a variety of savory toppings. It's a timeless favorite that never fails to satisfy.</p>
+            <a href="#" class="btn btn-primary">View Recipe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Our Users Say</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial">
+            <blockquote class="blockquote">
+              <i>
+              <p>......I absolutely love Recipe Sharing Platform! It's made discovering new recipes so easy and convenient. The variety of dishes available is incredible, and I've already found several new favorites.</p>
+            </i>
+              <footer class="blockquote-footer">Nishant Bhardhwaj</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <blockquote class="blockquote">
+              <i>
+              <p>......As someone with dietary restrictions, finding delicious recipes that fit my needs can be a challenge. But Recipe Sharing Platform has been a game-changer for me. I've discovered so many tasty gluten-free and vegan recipes that I can't wait to try.</p>
+            </i>
+              <footer class="blockquote-footer">Aryan Banyal</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <blockquote class="blockquote">
+              <i>
+              <p>......I'm constantly impressed by the quality of recipes on Recipe Sharing Platform. Not only are the recipes delicious, but the step-by-step instructions and helpful tips make cooking them a breeze. I've become much more adventurous in the kitchen thanks to this platform.</p>
+            </i>
+              <footer class="blockquote-footer">Farhan</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="video-recipes">
+      <div class="container">
+        <h2>Video Recipes</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="video-wrapper">
+              <iframe width="100%" height="200" src="https://www.youtube.com/embed/GZo06HY96ew?si=qwO87yTFNh-VsoUm" frameborder="0" allowfullscreen></iframe>
+              <p>Fresh Greek Salad Recipe</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="video-wrapper">
+              <iframe width="100%" height="200" src="https://www.youtube.com/embed/gbygXUDbf2Q?si=S5-5FKh5dVo4g1ju" frameborder="0" allowfullscreen></iframe>
+              <p>Spicy Noodles Recipe</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="video-wrapper">
+              <iframe width="100%" height="200" src="https://www.youtube.com/embed/vcfNpDtVqOw?si=JGJtJvybfi04ZPkQ" frameborder="0" allowfullscreen></iframe>
+              <p>Classic Margherita Pizza Recipe</p>
+            </div>
+          </div>
+          <!-- Add more video wrappers as needed -->
+        </div>
+      </div>
+    </section>
+  </section>
+
+  
+<section class="quote-subscribe-adds">
+  <div class="container">
+      <div class="row align-items-end">
+          <!-- Quote -->
+          <div class="col-12 col-lg-4">
+              <div class="quote-area text-center">
+                  <span>"</span>
+                  <h4>Nothing is better than going home to family and eating good food and relaxing</h4>
+                  <p>John Smith</p>
+                  <div class="date-comments d-flex justify-content-between">
+                      <div class="date">January 04, 2018</div>
+                      <div class="comments">2 Comments</div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-12 col-lg-4">
+              <div class="newsletter-area">
+                  <h4>Subscribe to our newsletter</h4>
+                  <!-- Form -->
+                  <div class="newsletter-form bg-img bg-overlay" style="background-image: url(bg1.jpg);">
+                      <form action="#" method="post">
+                          <input type="email" name="email" placeholder="Subscribe to newsletter">
+                          <button type="submit" class="btn delicious-btn w-100" id="holala">Subscribe</button>
+                      </form>
+                      <p>Stay updated with our latest recipes and cooking tips by subscribing to our newsletter.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Adds -->
+          <div class="col-12 col-lg-4">
+              <div class="delicious-add">
+                  <img src="add.png" alt="">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2024 Recipe Sharing. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="scripts.js"></script>
+</body>
+</html>
